@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Newspaper, SquareUser } from "lucide-react";
+import { Coffee, Plus } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -13,13 +13,13 @@ export const NavItems = () => {
 
     const navItems = [
         {
-            label: "Currículos",
-            icon: Newspaper,
+            label: "Consultar",
+            icon: Coffee,
             path: "/dashboard/resumes",
         },
         {
-            label: "Configurações de Conta",
-            icon: SquareUser,
+            label: "Cadastrar",
+            icon: Plus,
             path: "/dashboard/account",
         }
     ];
