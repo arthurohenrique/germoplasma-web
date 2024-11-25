@@ -28,12 +28,14 @@ export const NavItems = () => {
 
 
     return (
-        <nav className="w-full flex flex-col gap-2 px-2 py-4">
+        <nav className="w-full flex flex-col gap-2 px-2 py-4 h-f">
+
             {navItems.map((item) => {
 
                 const isActive = pathname.startsWith(item.path);
                 
                 return (
+
                     <Link key={item.path} href={item.path}>
                         
                         <Button variant="ghost" className={cn(
@@ -47,11 +49,12 @@ export const NavItems = () => {
                         </Button>
 
                     </Link>
+
                 );
             })}
-
-            <CarouselCards /> 
+        <CarouselCards /> 
         </nav>
+        
         
     )
 }
