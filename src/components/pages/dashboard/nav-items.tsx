@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 import { Coffee, Plus } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { CarouselCards } from "./carousel-cards";
+
 
 
 export const NavItems = () => {
@@ -47,6 +49,9 @@ export const NavItems = () => {
                     </Link>
                 );
             })}
+
+            <CarouselCards /> 
         </nav>
+        
     )
 }

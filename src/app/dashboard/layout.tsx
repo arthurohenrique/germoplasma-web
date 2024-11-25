@@ -20,7 +20,8 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
                 <div className="w-full mt-auto border-t border-muted px-3 py-4 flex items-center justify-between gap-2">
                     <UserDropdown />
-                    <ThemeToggle />
+                 {/*     -- Alterar para dark mode*/}
+                 <ThemeToggle />
                 </div>
             </aside>
 
